@@ -5,85 +5,41 @@ from datetime import datetime
 import os
 from pathlib import Path
 import base64
-from utils import get_today_str, read_csv_with_index
+from utils import get_today_str
 from visualizer import *
 from pdf_generator import PDFReportGenerator
 from pipeline.config import ALL_BENCHMARKS
+from cloud_data_loader import load_application_data, display_data_status
 
 # 配置
-DATA_DIR = Path('source_data')
-PROCESSED_DIR = Path('processed_data')
-MARKET_DIR = DATA_DIR
-HOLDINGS_DIR = Path('holdings')
 DEFAULT_BENCHMARKS = ['QQQ', 'SPY', 'DIA']
 
-st.set_page_config(page_title="AGIX Fund Analyzer (Manual)", layout="wide")
+st.set_page_config(page_title="AGIX Fund Analyzer (Cloud)", layout="wide")
 
-# 数据加载函数
+# 检查数据状态
 @st.cache_data
-def load_data():
-    """加载所有数据文件"""
-    try:
-        returns_df = pd.read_csv(PROCESSED_DIR / 'returns.csv')
-        risk_metrics = pd.read_csv(PROCESSED_DIR / 'risk_metrics.csv')
-        volume_analysis = pd.read_csv(PROCESSED_DIR / 'volume_analysis.csv')
-        closes = read_csv_with_index(MARKET_DIR / 'market_data_closes.csv')
-        volumes = read_csv_with_index(MARKET_DIR / 'market_data_volumes.csv')
-        
-        # 只保留AGIX和Comparison ETF数据，并去除Weight和Type列
-        filter_types = ['AGIX', 'Comparison ETF']
-        returns_df = returns_df[returns_df['Type'].isin(filter_types)].drop(columns=['Weight', 'Type','Industry'], errors='ignore')
-        risk_metrics = risk_metrics[risk_metrics['Type'].isin(filter_types)].drop(columns=['Weight', 'Type'], errors='ignore')
-        volume_analysis = volume_analysis[volume_analysis['Type'].isin(filter_types)].drop(columns=['Weight', 'Type'], errors='ignore')
-        
-        return returns_df, risk_metrics, volume_analysis, closes, volumes
-    except Exception as e:
-        st.error(f"数据加载失败: {e}")
-        st.info("请确保已运行数据更新脚本")
-        return None, None, None, None, None
+def check_data_availability():
+    """检查数据可用性"""
+    data = load_application_data()
+    return data is not None
 
-# 检查数据文件是否存在
-def check_data_files():
-    """检查必要的数据文件是否存在"""
-    required_files = [
-        PROCESSED_DIR / 'returns.csv',
-        PROCESSED_DIR / 'risk_metrics.csv',
-        PROCESSED_DIR / 'volume_analysis.csv',
-        MARKET_DIR / 'market_data_closes.csv',
-        MARKET_DIR / 'market_data_volumes.csv'
-    ]
-    
-    missing_files = []
-    for file_path in required_files:
-        if not file_path.exists():
-            missing_files.append(str(file_path))
-    
-    return missing_files
-
-# 主应用
+# 主应用逻辑
 def main():
-    # 检查数据文件
-    missing_files = check_data_files()
-    if missing_files:
-        st.error("❌ 缺少必要的数据文件")
-        st.write("缺少的文件:")
-        for file in missing_files:
-            st.write(f"- {file}")
-        st.info("请先运行数据更新脚本:")
-        st.code("cd pipeline\npython data_fetcher.py\npython data_processor.py")
-        return
-    
-    # 加载数据
-    returns_df, risk_metrics, volume_analysis, closes, volumes = load_data()
-    if returns_df is None:
-        return
-    
-    # 侧边栏
+    # 显示数据状态
     with st.sidebar:
         st.header("Control Panel")
+        
+        # 数据状态检查
+        if not check_data_availability():
+            st.error("⚠️ 数据不可用")
+            display_data_status()
+            st.stop()
+        else:
+            st.success("✅ 数据已加载")
+        
         page = st.radio(
             "Select Page",
-            ["📊 Fund Performance Comparison", "🔍 Portfolio Analysis", "📰 Market Sentiment Analysis"],
+            ["📊 Fund Performance Comparison", "🔍 Portfolio Analysis", "📰 Market Sentiment Analysis", "📈 Data Status"],
             index=0
         )
         st.divider()
@@ -93,14 +49,6 @@ def main():
         end_date = st.date_input("End Date", today)
         risk_free_rate = st.slider("Risk-Free Rate (%)", 0.0, 10.0, 2.0) / 100
         st.divider()
-        
-        # 数据更新按钮
-        st.subheader("🔄 数据更新")
-        if st.button("📊 更新数据", help="运行数据更新脚本"):
-            st.info("请在终端中手动运行数据更新脚本")
-            st.code("cd pipeline\npython data_fetcher.py\npython data_processor.py")
-        
-        st.divider()
         st.subheader("📄 PDF Export Settings")
         export_pages = st.multiselect(
             "Select Pages to Export",
@@ -109,13 +57,53 @@ def main():
         )
         export_btn = st.button("📊 Export to PDF")
 
-    # 主页面逻辑
-    if page == "📊 Fund Performance Comparison":
-        st.title("AGIX Fund Performance Analysis (Manual)")
+    # 加载数据
+    data = load_application_data()
+    if data is None:
+        st.error("无法加载应用数据，请检查数据文件")
+        return
         
-        # 显示数据更新时间
-        data_update_time = datetime.fromtimestamp(os.path.getmtime(PROCESSED_DIR / 'returns.csv'))
-        st.caption(f"数据最后更新时间: {data_update_time.strftime('%Y-%m-%d %H:%M:%S')}")
+    returns_df = data['returns']
+    risk_metrics = data['risk_metrics']
+    volume_analysis = data['volume_analysis']
+    closes = data['market_closes']
+    volumes = data['market_volumes']
+
+    # 只保留AGIX和Comparison ETF数据，并去除Weight和Type列
+    filter_types = ['AGIX', 'Comparison ETF']
+    returns_df = returns_df[returns_df['Type'].isin(filter_types)].drop(columns=['Weight', 'Type','Industry'], errors='ignore')
+    risk_metrics = risk_metrics[risk_metrics['Type'].isin(filter_types)].drop(columns=['Weight', 'Type'], errors='ignore')
+    volume_analysis = volume_analysis[volume_analysis['Type'].isin(filter_types)].drop(columns=['Weight', 'Type'], errors='ignore')
+
+    # 页面逻辑
+    if page == "📈 Data Status":
+        st.title("Data Status Dashboard")
+        display_data_status()
+        
+        # 显示数据统计信息
+        st.subheader("📊 数据统计")
+        col1, col2, col3 = st.columns(3)
+        
+        with col1:
+            st.metric("收益率数据行数", len(returns_df))
+        with col2:
+            st.metric("风险指标行数", len(risk_metrics))
+        with col3:
+            st.metric("成交量分析行数", len(volume_analysis))
+            
+        # 显示数据预览
+        st.subheader("📋 数据预览")
+        tab1, tab2, tab3 = st.tabs(["Returns", "Risk Metrics", "Volume Analysis"])
+        
+        with tab1:
+            st.dataframe(returns_df.head())
+        with tab2:
+            st.dataframe(risk_metrics.head())
+        with tab3:
+            st.dataframe(volume_analysis.head())
+            
+    elif page == "📊 Fund Performance Comparison":
+        st.title("AGIX Fund Performance Analysis (Cloud)")
         
         # 新增：全局benchmarks多选
         benchmarks = st.multiselect(
@@ -199,15 +187,15 @@ def main():
             st.dataframe(volumes.tail(10))
             
     elif page == "🔍 Portfolio Analysis":
-        st.title("AGIX Fund Portfolio Analysis (Manual)")
+        st.title("AGIX Fund Portfolio Analysis (Cloud)")
         st.subheader("Asset Allocation & Holdings Breakdown")
         
         # 读取数据
-        try:
-            sector_df = pd.read_csv(PROCESSED_DIR / 'holdings_sectorAnalysis.csv')
-            country_df = pd.read_csv(PROCESSED_DIR / 'holdings_countryAnalysis.csv')
-        except Exception as e:
-            st.error(f"投资组合数据加载失败: {e}")
+        sector_df = data.get('sector_analysis')
+        country_df = data.get('country_analysis')
+        
+        if sector_df is None or country_df is None:
+            st.error("投资组合分析数据不可用")
             return
 
         col1, col2 = st.columns(2)
@@ -286,7 +274,7 @@ def main():
             st.dataframe(country_df_sorted, use_container_width=True)
             
     elif page == "📰 Market Sentiment Analysis":
-        st.title("Market Sentiment Analysis (Manual)")
+        st.title("Market Sentiment Analysis (Cloud)")
         st.subheader("News Sentiment & Market Mood")
         st.info("市场情绪分析功能请根据新pipeline数据结构补充实现！如需新闻、情感分析等，请补充数据处理和前端展示逻辑。")
         
@@ -294,7 +282,7 @@ def main():
     if export_btn:
         try:
             report = PDFReportGenerator()
-            report.add_title("AGIX Fund Analysis Report (Manual)")
+            report.add_title("AGIX Fund Analysis Report (Cloud)")
             report.add_text(f"Report generated on: {get_today_str()}")
             report.add_text(f"Analysis period: {start_date} to {end_date}")
             report.add_text(f"Pages included: {', '.join(export_pages)}")
