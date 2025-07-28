@@ -31,10 +31,10 @@
       "NBIS"
     ],
     [
-      "ORCL"
+      "PLTR"
     ],
     [
-      "PLTR"
+      "ORCL"
     ],
     [
       "AVGO"
@@ -43,10 +43,10 @@
       "CRM"
     ],
     [
-      "NOW"
+      "TSLA"
     ],
     [
-      "TSLA"
+      "NOW"
     ],
     [
       "2330.TW"
@@ -61,13 +61,13 @@
       "SAP"
     ],
     [
-      "000660.KS"
-    ],
-    [
       "DDOG"
     ],
     [
       "SNOW"
+    ],
+    [
+      "000660.KS"
     ],
     [
       "ADBE"
@@ -94,28 +94,28 @@
       "MDB"
     ],
     [
-      "APP"
+      "VRT"
     ],
     [
-      "VRT"
+      "APP"
     ],
     [
       "WDAY"
     ],
     [
-      "ANET"
-    ],
-    [
       "PANW"
-    ],
-    [
-      "ASML"
     ],
     [
       "TEAM"
     ],
     [
+      "ANET"
+    ],
+    [
       "ZS"
+    ],
+    [
+      "ASML"
     ],
     [
       "PSTG"
@@ -124,10 +124,10 @@
       "GTLB"
     ],
     [
-      "MU"
+      "CFLT"
     ],
     [
-      "CFLT"
+      "MU"
     ],
     [
       "SNPS"
@@ -143,5 +143,5 @@
     ]
   ],
   "index": null,
-  "last_updated": "2025-07-28T20:14:34.710038"
+  "last_updated": "2025-07-28T20:35:48.294934"
 }
