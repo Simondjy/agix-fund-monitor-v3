@@ -1,0 +1,1 @@
+# write a python scrapper to get qqq holdings data from https://www.invesco.com/qqq-etf/en/about.html
