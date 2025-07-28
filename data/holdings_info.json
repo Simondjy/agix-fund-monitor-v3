@@ -4,332 +4,379 @@
     "Company Name",
     "Website",
     "Country",
-    "AverageAnalystRating"
+    "AverageAnalystRating",
+    "Error"
   ],
   "data": [
     [
       "META",
-      "Meta Platforms, Inc.",
-      "https://investor.atmeta.com",
-      "United States",
-      "1.4 - Strong Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "MSFT",
-      "Microsoft Corporation",
-      "https://www.microsoft.com",
-      "United States",
-      "1.4 - Strong Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "AMZN",
-      "Amazon.com, Inc.",
-      "https://www.aboutamazon.com",
-      "United States",
-      "1.4 - Strong Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "NVDA",
-      "NVIDIA Corporation",
-      "https://www.nvidia.com",
-      "United States",
-      "1.5 - Strong Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "XAAI.PVT",
-      "xAI",
-      "https://x.ai",
-      "US",
-      NaN
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "ANTH.PVT",
-      "Anthropic",
-      "https://www.anthropic.com",
-      "US",
-      NaN
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "GOOGL",
-      "Alphabet Inc.",
-      "https://abc.xyz",
-      "United States",
-      "1.5 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "AAPL",
-      "Apple Inc.",
-      "https://www.apple.com",
-      "United States",
-      "2.0 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "NBIS",
       NaN,
-      "https://group.nebius.com",
-      "Netherlands",
-      NaN
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "ORCL",
-      "Oracle Corporation",
-      "https://www.oracle.com",
-      "United States",
-      "1.8 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "PLTR",
-      "Palantir Technologies Inc.",
-      "https://www.palantir.com",
-      "United States",
-      "3.0 - Hold"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "AVGO",
-      "Broadcom Inc.",
-      "https://www.broadcom.com",
-      "United States",
-      "1.4 - Strong Buy"
-    ],
-    [
-      "TSLA",
-      "Tesla, Inc.",
-      "https://www.tesla.com",
-      "United States",
-      "2.6 - Hold"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "CRM",
-      "Salesforce, Inc.",
-      "https://www.salesforce.com",
-      "United States",
-      "1.6 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "NOW",
-      "ServiceNow, Inc.",
-      "https://www.servicenow.com",
-      "United States",
-      "1.5 - Strong Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
+    ],
+    [
+      "TSLA",
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "2330.TW",
-      "Taiwan Semiconductor Manufacturing Company Limited",
-      "https://www.tsmc.com",
-      "Taiwan",
-      "1.3 - Strong Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "RBLX",
-      "Roblox Corporation",
-      "https://corp.roblox.com",
-      "United States",
-      "2.0 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "NET",
-      "Cloudflare, Inc.",
-      "https://www.cloudflare.com",
-      "United States",
-      "2.1 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "SAP",
-      "SAP SE",
-      "https://www.sap.com",
-      "Germany",
-      "1.6 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "000660.KS",
-      "SK hynix Inc.",
-      "https://www.skhynix.com",
-      "South Korea",
-      "1.5 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "DDOG",
-      "Datadog, Inc.",
-      "https://www.datadoghq.com",
-      "United States",
-      "1.6 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "SNOW",
-      "Snowflake Inc.",
-      "https://www.snowflake.com",
-      "United States",
-      "1.7 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "ADBE",
-      "Adobe Inc.",
-      "https://www.adobe.com",
-      "United States",
-      "1.9 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "ESTC",
-      "Elastic N.V.",
-      "https://www.elastic.co",
-      "Netherlands",
-      "1.7 - Buy"
-    ],
-    [
-      "TEM",
-      "Tempus AI, Inc.",
-      "https://www.tempus.com",
-      "United States",
-      "2.1 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "SHOP",
-      "Shopify Inc.",
-      "https://www.shopify.com",
-      "Canada",
-      "1.9 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
+    ],
+    [
+      "TEM",
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "DUOL",
-      "Duolingo, Inc.",
-      "https://www.duolingo.com",
-      "United States",
-      "2.1 - Buy"
-    ],
-    [
-      "IOT",
-      "Samsara Inc.",
-      "https://www.samsara.com",
-      "United States",
-      "2.0 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "MRVL",
-      "Marvell Technology, Inc.",
-      "https://www.marvell.com",
-      "United States",
-      "1.5 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
-      "APP",
-      "AppLovin Corporation",
-      "https://www.applovin.com",
-      "United States",
-      "1.7 - Buy"
+      "IOT",
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "MDB",
-      "MongoDB, Inc.",
-      "https://www.mongodb.com",
-      "United States",
-      "1.7 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
+    ],
+    [
+      "APP",
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "VRT",
-      "Vertiv Holdings Co",
-      "https://www.vertiv.com",
-      "United States",
-      "1.6 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "WDAY",
-      "Workday, Inc.",
-      "https://www.workday.com",
-      "United States",
-      "1.8 - Buy"
-    ],
-    [
-      "TEAM",
-      "Atlassian Corporation",
-      "https://www.atlassian.com",
-      "Australia",
-      "1.6 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "ANET",
-      "Arista Networks Inc",
-      "https://www.arista.com",
-      "United States",
-      "1.7 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "PANW",
-      "Palo Alto Networks, Inc.",
-      "https://www.paloaltonetworks.com",
-      "United States",
-      "1.8 - Buy"
-    ],
-    [
-      "ZS",
-      "Zscaler, Inc.",
-      "https://www.zscaler.com",
-      "United States",
-      "1.8 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "ASML",
-      "ASML Holding N.V.",
-      "https://www.asml.com",
-      "Netherlands",
-      "1.9 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
+    ],
+    [
+      "TEAM",
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
+    ],
+    [
+      "ZS",
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "PSTG",
-      "Pure Storage, Inc.",
-      "https://www.purestorage.com",
-      "United States",
-      "2.0 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "GTLB",
-      "GitLab Inc.",
-      "https://about.gitlab.com",
-      "United States",
-      "1.5 - Strong Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "MU",
-      "Micron Technology, Inc.",
-      "https://www.micron.com",
-      "United States",
-      "1.5 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "CFLT",
-      "Confluent, Inc.",
-      "https://www.confluent.io",
-      "United States",
-      "1.6 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "SNPS",
-      "Synopsys, Inc.",
-      "https://www.synopsys.com",
-      "United States",
-      "1.4 - Strong Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "ARM",
-      "Arm Holdings plc",
-      "https://www.arm.com",
-      "United Kingdom",
-      "2.2 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "QCOM",
-      "QUALCOMM Incorporated",
-      "https://www.qualcomm.com",
-      "United States",
-      "2.2 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ],
     [
       "2454.TW",
-      "MediaTek Inc.",
-      "https://www.mediatek.com",
-      "Taiwan",
-      "1.7 - Buy"
+      NaN,
+      NaN,
+      NaN,
+      NaN,
+      "Too Many Requests. Rate limited. Try after a while."
     ]
   ],
   "index": null,
-  "last_updated": "2025-07-28T11:58:18.543549"
+  "last_updated": "2025-07-28T20:14:34.712438"
 }
