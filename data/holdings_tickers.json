@@ -19,9 +19,6 @@
       "XAAI.PVT"
     ],
     [
-      "ANTH.PVT"
-    ],
-    [
       "GOOGL"
     ],
     [
@@ -31,28 +28,31 @@
       "NBIS"
     ],
     [
-      "PLTR"
+      "ANTH.PVT"
     ],
     [
       "ORCL"
     ],
     [
-      "AVGO"
+      "PLTR"
     ],
     [
-      "CRM"
+      "AVGO"
     ],
     [
       "TSLA"
     ],
     [
+      "CRM"
+    ],
+    [
       "NOW"
     ],
     [
-      "2330.TW"
+      "RBLX"
     ],
     [
-      "RBLX"
+      "2330.TW"
     ],
     [
       "NET"
@@ -73,16 +73,13 @@
       "ADBE"
     ],
     [
-      "ESTC"
-    ],
-    [
       "SHOP"
     ],
     [
-      "TEM"
+      "ESTC"
     ],
     [
-      "DUOL"
+      "TEM"
     ],
     [
       "MRVL"
@@ -91,13 +88,19 @@
       "IOT"
     ],
     [
-      "MDB"
-    ],
-    [
       "VRT"
     ],
     [
+      "MDB"
+    ],
+    [
+      "DUOL"
+    ],
+    [
       "APP"
+    ],
+    [
+      "ANET"
     ],
     [
       "WDAY"
@@ -107,9 +110,6 @@
     ],
     [
       "TEAM"
-    ],
-    [
-      "ANET"
     ],
     [
       "ZS"
@@ -124,10 +124,10 @@
       "GTLB"
     ],
     [
-      "CFLT"
+      "MU"
     ],
     [
-      "MU"
+      "CFLT"
     ],
     [
       "SNPS"
@@ -143,5 +143,5 @@
     ]
   ],
   "index": null,
-  "last_updated": "2025-07-28T20:35:48.294934"
+  "last_updated": "2025-07-29T11:18:17.513701"
 }
