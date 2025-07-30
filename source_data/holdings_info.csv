@@ -6,11 +6,11 @@ NVDA,NVIDIA Corporation,https://www.nvidia.com,United States,1.4 - Strong Buy
 XAAI.PVT,xAI,https://x.ai,US,
 GOOGL,Alphabet Inc.,https://abc.xyz,United States,1.5 - Buy
 AAPL,Apple Inc.,https://www.apple.com,United States,2.0 - Buy
-NBIS,,https://group.nebius.com,Netherlands,
 ANTH.PVT,Anthropic,https://www.anthropic.com,US,
 ORCL,Oracle Corporation,https://www.oracle.com,United States,1.8 - Buy
-PLTR,Palantir Technologies Inc.,https://www.palantir.com,United States,3.0 - Hold
+NBIS,,https://group.nebius.com,Netherlands,
 AVGO,Broadcom Inc.,https://www.broadcom.com,United States,1.3 - Strong Buy
+PLTR,Palantir Technologies Inc.,https://www.palantir.com,United States,3.0 - Hold
 TSLA,"Tesla, Inc.",https://www.tesla.com,United States,2.7 - Hold
 CRM,"Salesforce, Inc.",https://www.salesforce.com,United States,1.7 - Buy
 NOW,"ServiceNow, Inc.",https://www.servicenow.com,United States,1.5 - Strong Buy
@@ -22,21 +22,21 @@ DDOG,"Datadog, Inc.",https://www.datadoghq.com,United States,1.6 - Buy
 SNOW,Snowflake Inc.,https://www.snowflake.com,United States,1.7 - Buy
 000660.KS,SK hynix Inc.,https://www.skhynix.com,South Korea,1.6 - Buy
 ADBE,Adobe Inc.,https://www.adobe.com,United States,1.9 - Buy
-SHOP,Shopify Inc.,https://www.shopify.com,Canada,1.9 - Buy
 ESTC,Elastic N.V.,https://www.elastic.co,Netherlands,1.8 - Buy
-TEM,"Tempus AI, Inc.",https://www.tempus.com,United States,2.2 - Buy
+SHOP,Shopify Inc.,https://www.shopify.com,Canada,1.9 - Buy
 MRVL,"Marvell Technology, Inc.",https://www.marvell.com,United States,1.5 - Buy
+VRT,Vertiv Holdings Co,https://www.vertiv.com,United States,1.5 - Strong Buy
+TEM,"Tempus AI, Inc.",https://www.tempus.com,United States,2.2 - Buy
 IOT,Samsara Inc.,https://www.samsara.com,United States,2.0 - Buy
-VRT,Vertiv Holdings Co,https://www.vertiv.com,United States,1.6 - Buy
 MDB,"MongoDB, Inc.",https://www.mongodb.com,United States,1.7 - Buy
 DUOL,"Duolingo, Inc.",https://www.duolingo.com,United States,2.0 - Buy
 APP,AppLovin Corporation,https://www.applovin.com,United States,1.7 - Buy
 ANET,Arista Networks Inc,https://www.arista.com,United States,1.7 - Buy
 WDAY,"Workday, Inc.",https://www.workday.com,United States,1.8 - Buy
-PANW,"Palo Alto Networks, Inc.",https://www.paloaltonetworks.com,United States,1.8 - Buy
-TEAM,Atlassian Corporation,https://www.atlassian.com,Australia,1.6 - Buy
 ZS,"Zscaler, Inc.",https://www.zscaler.com,United States,1.8 - Buy
+TEAM,Atlassian Corporation,https://www.atlassian.com,Australia,1.6 - Buy
 ASML,ASML Holding N.V.,https://www.asml.com,Netherlands,1.8 - Buy
+PANW,"Palo Alto Networks, Inc.",https://www.paloaltonetworks.com,United States,1.8 - Buy
 PSTG,"Pure Storage, Inc.",https://www.purestorage.com,United States,1.9 - Buy
 GTLB,GitLab Inc.,https://about.gitlab.com,United States,1.5 - Buy
 MU,"Micron Technology, Inc.",https://www.micron.com,United States,1.5 - Buy

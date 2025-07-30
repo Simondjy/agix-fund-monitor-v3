@@ -125,7 +125,7 @@ class DataSync:
         print(f"✅ 恢复完成: {success_count}/{len(files_to_restore)} 个文件")
         return success_count == len(files_to_restore)
         
-    def upload_to_cloud_storage(self, bucket_name, credentials_file=None):
+    '''def upload_to_cloud_storage(self, bucket_name, credentials_file=None):
         """上传数据到云存储（示例：AWS S3）"""
         try:
             import boto3
@@ -156,8 +156,9 @@ class DataSync:
         except Exception as e:
             print(f"❌ 上传失败: {e}")
             return False
+            '''
             
-    def download_from_cloud_storage(self, bucket_name, credentials_file=None):
+    '''def download_from_cloud_storage(self, bucket_name, credentials_file=None):
         """从云存储下载数据"""
         try:
             import boto3
@@ -196,6 +197,7 @@ class DataSync:
         except Exception as e:
             print(f"❌ 下载失败: {e}")
             return False
+            '''
 
 def main():
     parser = argparse.ArgumentParser(description="AGIX Fund Monitor 数据同步工具")

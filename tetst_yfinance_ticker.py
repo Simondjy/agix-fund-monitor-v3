@@ -1,7 +1,7 @@
 import yfinance as yf
 
 tickers = [
-    "ANTH.PVT"
+    "XAIX.F"
 ]
 
 unavailable = []

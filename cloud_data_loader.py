@@ -34,6 +34,18 @@ class CloudDataLoader:
             df = pd.DataFrame(data['data'], columns=data['columns'])
             if data['index']:
                 df.index = data['index']
+            
+            # 对于市场数据文件，确保数值列被正确转换为数值类型
+            if 'market_data_closes' in filename or 'market_data_volumes' in filename:
+                # 将Date列设置为索引
+                if 'Date' in df.columns:
+                    df['Date'] = pd.to_datetime(df['Date'])
+                    df.set_index('Date', inplace=True)
+                
+                # 将所有数值列转换为float类型
+                numeric_columns = df.select_dtypes(include=['object']).columns
+                for col in numeric_columns:
+                    df[col] = pd.to_numeric(df[col], errors='coerce')
                 
             self.cache[filename] = df
             return df
