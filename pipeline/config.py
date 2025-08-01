@@ -1,9 +1,16 @@
 import os
 from pathlib import Path
 from datetime import datetime, timedelta
+import sys
+
+# 添加项目根目录到Python路径
+BASE_DIR = Path(__file__).resolve().parent.parent
+sys.path.append(str(BASE_DIR))
+
+from utils import get_today_str
 
 # v2本地数据保存路径
-BASE_DIR = Path(__file__).resolve().parent.parent  # v2目录
+# BASE_DIR = Path(__file__).resolve().parent.parent  # v2目录
 RAW_DATA_DIR = BASE_DIR / 'source_data'
 PROCESSED_DATA_DIR = BASE_DIR / 'processed_data'
 HOLDINGS_DIR = BASE_DIR / 'holdings'
@@ -44,7 +51,8 @@ YF_PERIOD = 'max'
 YF_INTERVAL = '1d'
 # yfinance数据下载起始日期
 YF_START_DATE = '2023-01-01'
-YF_END_DATE = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
+# YF_END_DATE = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
+YF_END_DATE = get_today_str()
 
 # 其他配置
 CACHE_DIR = BASE_DIR / 'cache' 

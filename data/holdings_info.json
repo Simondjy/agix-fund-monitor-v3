@@ -50,18 +50,18 @@
       NaN
     ],
     [
-      "AAPL",
-      "Apple Inc.",
-      "https://www.apple.com",
-      "United States",
-      "1.9 - Buy"
-    ],
-    [
       "NBIS",
       NaN,
       "https://group.nebius.com",
       "Netherlands",
       NaN
+    ],
+    [
+      "AAPL",
+      "Apple Inc.",
+      "https://www.apple.com",
+      "United States",
+      "1.9 - Buy"
     ],
     [
       "ORCL",
@@ -71,6 +71,13 @@
       "1.8 - Buy"
     ],
     [
+      "PLTR",
+      "Palantir Technologies Inc.",
+      "https://www.palantir.com",
+      "United States",
+      "3.0 - Hold"
+    ],
+    [
       "AVGO",
       "Broadcom Inc.",
       "https://www.broadcom.com",
@@ -78,11 +85,11 @@
       "1.3 - Strong Buy"
     ],
     [
-      "PLTR",
-      "Palantir Technologies Inc.",
-      "https://www.palantir.com",
+      "RBLX",
+      "Roblox Corporation",
+      "https://corp.roblox.com",
       "United States",
-      "3.0 - Hold"
+      "2.0 - Buy"
     ],
     [
       "ANTH.PVT",
@@ -113,11 +120,11 @@
       "1.5 - Strong Buy"
     ],
     [
-      "RBLX",
-      "Roblox Corporation",
-      "https://corp.roblox.com",
+      "NET",
+      "Cloudflare, Inc.",
+      "https://www.cloudflare.com",
       "United States",
-      "2.0 - Buy"
+      "2.1 - Buy"
     ],
     [
       "2330.TW",
@@ -127,24 +134,10 @@
       "1.3 - Strong Buy"
     ],
     [
-      "NET",
-      "Cloudflare, Inc.",
-      "https://www.cloudflare.com",
-      "United States",
-      "2.1 - Buy"
-    ],
-    [
       "SAP",
       "SAP SE",
       "https://www.sap.com",
       "Germany",
-      "1.6 - Buy"
-    ],
-    [
-      "DDOG",
-      "Datadog, Inc.",
-      "https://www.datadoghq.com",
-      "United States",
       "1.6 - Buy"
     ],
     [
@@ -162,18 +155,18 @@
       "1.6 - Buy"
     ],
     [
+      "DDOG",
+      "Datadog, Inc.",
+      "https://www.datadoghq.com",
+      "United States",
+      "1.6 - Buy"
+    ],
+    [
       "ADBE",
       "Adobe Inc.",
       "https://www.adobe.com",
       "United States",
       "1.9 - Buy"
-    ],
-    [
-      "ESTC",
-      "Elastic N.V.",
-      "https://www.elastic.co",
-      "Netherlands",
-      "1.8 - Buy"
     ],
     [
       "SHOP",
@@ -190,25 +183,25 @@
       "1.5 - Buy"
     ],
     [
+      "ESTC",
+      "Elastic N.V.",
+      "https://www.elastic.co",
+      "Netherlands",
+      "1.8 - Buy"
+    ],
+    [
+      "APP",
+      "AppLovin Corporation",
+      "https://www.applovin.com",
+      "United States",
+      "1.7 - Buy"
+    ],
+    [
       "VRT",
       "Vertiv Holdings Co",
       "https://www.vertiv.com",
       "United States",
       "1.5 - Strong Buy"
-    ],
-    [
-      "MDB",
-      "MongoDB, Inc.",
-      "https://www.mongodb.com",
-      "United States",
-      "1.7 - Buy"
-    ],
-    [
-      "TEM",
-      "Tempus AI, Inc.",
-      "https://www.tempus.com",
-      "United States",
-      "2.2 - Buy"
     ],
     [
       "DUOL",
@@ -218,18 +211,25 @@
       "2.0 - Buy"
     ],
     [
+      "TEM",
+      "Tempus AI, Inc.",
+      "https://www.tempus.com",
+      "United States",
+      "2.2 - Buy"
+    ],
+    [
+      "MDB",
+      "MongoDB, Inc.",
+      "https://www.mongodb.com",
+      "United States",
+      "1.7 - Buy"
+    ],
+    [
       "IOT",
       "Samsara Inc.",
       "https://www.samsara.com",
       "United States",
       "2.0 - Buy"
-    ],
-    [
-      "APP",
-      "AppLovin Corporation",
-      "https://www.applovin.com",
-      "United States",
-      "1.7 - Buy"
     ],
     [
       "ANET",
@@ -253,6 +253,13 @@
       "1.8 - Buy"
     ],
     [
+      "PSTG",
+      "Pure Storage, Inc.",
+      "https://www.purestorage.com",
+      "United States",
+      "1.9 - Buy"
+    ],
+    [
       "TEAM",
       "Atlassian Corporation",
       "https://www.atlassian.com",
@@ -265,13 +272,6 @@
       "https://www.asml.com",
       "Netherlands",
       "1.8 - Buy"
-    ],
-    [
-      "PSTG",
-      "Pure Storage, Inc.",
-      "https://www.purestorage.com",
-      "United States",
-      "1.9 - Buy"
     ],
     [
       "MU",
@@ -295,13 +295,6 @@
       "1.5 - Buy"
     ],
     [
-      "CFLT",
-      "Confluent, Inc.",
-      "https://www.confluent.io",
-      "United States",
-      "1.6 - Buy"
-    ],
-    [
       "SNPS",
       "Synopsys, Inc.",
       "https://www.synopsys.com",
@@ -323,6 +316,13 @@
       "2.3 - Buy"
     ],
     [
+      "CFLT",
+      "Confluent, Inc.",
+      "https://www.confluent.io",
+      "United States",
+      "1.6 - Buy"
+    ],
+    [
       "2454.TW",
       "MediaTek Inc.",
       "https://www.mediatek.com",
@@ -331,5 +331,5 @@
     ]
   ],
   "index": null,
-  "last_updated": "2025-07-31T15:45:56.571923"
+  "last_updated": "2025-08-01T11:31:06.257504"
 }
