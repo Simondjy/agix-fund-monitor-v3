@@ -144,7 +144,7 @@ python data_sync.py --action sync
 # 提交更改
 git add .
 git commit -m "Update data - $(date +%Y-%m-%d)"
-git push
+git push origin main
 ```
 
 #### 2. 修改代码
